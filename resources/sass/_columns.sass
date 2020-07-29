@@ -1,0 +1,36 @@
+.columns
+    padding: 40px 0
+    width: 100%
+    margin: 0 auto
+
+    // .columns__inner
+
+    &__inner
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 20px
+        @media only screen and (max-width : 768px)
+            grid-template-columns: repeat(2, 1fr)
+        @media only screen and (max-width : 480px)
+            grid-template-columns: 1fr
+    // .columns__item
+
+    &__item
+        text-align: center
+        padding: 15px
+        border: 1px solid $accent-color
+        i
+            font-size: 40px
+            margin-bottom: 15px
+            color: $accent-color
+
+    // .columns__title
+
+    &__title
+        font-weight: 700
+        margin-bottom: 15px
+
+    &__text
+
+
+
