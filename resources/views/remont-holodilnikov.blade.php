@@ -22,7 +22,7 @@
                 <p class="start__text">И в течение 5 минут с вами свяжется наш специалист, чтобы определить поломку и сообщить стоимость ремонта</p>
 
 
-                <form action="{{ url('/sendemail/send') }}" class="start__form">
+                <form action="{{ url('/sendemail/send') }}" class="start__form" method="post">
                     {{ csrf_field() }}
                     <input name="name" type="text" class="start__input" placeholder="Имя">
                     <input name="tel" type="tel" class="start__input" placeholder="+7 ______________">
@@ -134,7 +134,7 @@
         <div class="rewquest__inner">
             <h2 class="rewquest__title">Вызвать мастера по ремонту холодильников</h2>
 
-            <form action="{{ url('/sendemail/send') }}" class="rewquest__form">
+            <form action="{{ url('/sendemail/send') }}" class="rewquest__form" method="post">
                 {{ csrf_field() }}
                 <input name="name" type="text" class="rewquest__input" placeholder="Имя">
                 <input name="tel" type="tel" class="rewquest__input" placeholder="+7 _______________">
