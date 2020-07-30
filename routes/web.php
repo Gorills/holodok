@@ -22,7 +22,9 @@ Route::get('/remont-holodilnikov', function () {
 Route::get('/remont-stiralnyh-mashin', function () {
     return view('remont-stiralnyh-mashin');
 });
+Route::get('/sendemail', 'SendEmailController@index');
 
+Route::post('/sendemail/send', 'SendEmailController@send');
 
 Auth::routes();
 

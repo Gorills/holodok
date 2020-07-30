@@ -23,10 +23,10 @@
                     <p class="start__text">И в течение 5 минут с вами свяжется наш специалист, чтобы определить поломку и сообщить стоимость ремонта</p>
 
 
-                    <form action="#" class="start__form">
-
-                        <input type="text" class="start__input" placeholder="Имя">
-                        <input type="tel" class="start__input" placeholder="+7 ______________">
+                    <form action="{{ url('/sendemail/send') }}" class="start__form">
+                        {{ csrf_field() }}
+                        <input name="name" type="text" class="start__input" placeholder="Имя">
+                        <input name="tel" type="tel" class="start__input" placeholder="+7 ______________">
                         <button class="start__btn btn btn__accent">Оставить заявку</button>
                     </form>
 
