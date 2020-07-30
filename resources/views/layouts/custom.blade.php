@@ -19,13 +19,18 @@
     <meta property="og:description" content="@yield('og:description')" />
     <meta property="og:url" content="@yield('og:url')" />
 
-    <meta name="theme-color" content="#ff6801">
-    <meta property="og:site_name" content="beton70.com" />
+    <meta name="theme-color" content="#b0a171">
+    <meta property="og:site_name" content="http://tomskmaster70.ru/" />
     <meta property="og:image" content="" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="@yield('twitter:description')" />
     <meta name="twitter:title" content="@yield('twitter:title')" />
+    <meta name="robots" content="index, follow">
+    <meta name="geo.placename" content="Томск, Россия">
+    <meta name="geo.position" content="56.469095, 84.971444">
+    <meta name="ICBM" content="56.469095, 84.971444">
+    <meta name="referrer" content="origin">
 
 
 
@@ -40,6 +45,9 @@
 
 @yield('content')
 
+@component('components.btn')
+
+@endcomponent
 
 @component('components.footer')
 
@@ -47,30 +55,9 @@
 
 
 
-{{--<script type="application/ld+json"> {--}}
-{{--    "@context": "http://schema.org",--}}
-{{--    "@type": "Organization",--}}
-{{--    "name": "ООО Руд Медиум",--}}
-{{--    "alternateName": "Руд Медиум",--}}
-{{--    "description": "Бетон, раствор, тортуарная плитка",--}}
-{{--    "url": "https://beton70.com/",--}}
-{{--    "email": "beton70com@yandex.ru",--}}
-{{--    "legalName": "Руд Медиум",--}}
-{{--    "logo": "https://beton70.com/images/logo.png",--}}
-{{--    "address": {--}}
-{{--      "@type": "PostalAddress",--}}
-{{--      "addressCountry": "RU",--}}
-{{--      "addressLocality": "Томск",--}}
-{{--      "addressRegion": "Томская область",--}}
-{{--      "postalCode": "634021",--}}
-{{--      "streetAddress": "ул. Шевченко, 49б ст 6"--}}
-{{--    },--}}
-{{--    "telephone": "+73822500200"--}}
-{{--  }--}}
-{{--</script>--}}
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-{{--<script src="{{ URL::asset('js/app.js') }}"></script>--}}
+
 <script src="{{ URL::asset('js/site.js') }} "></script>
 
 

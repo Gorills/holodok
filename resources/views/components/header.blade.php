@@ -6,22 +6,12 @@
     </div>
 </div>
 <div class="header__closer"></div>
-<?php $home = '/' ?>
+
 
 <header class="header">
     <div class="container">
         <div class="header__inner">
 
-{{--            @if($home == $_SERVER['REQUEST_URI'])--}}
-
-{{--                <img src="{{ URL::asset('images/logo.png') }}" alt="logo" class="header__logo">--}}
-
-
-{{--            @else--}}
-{{--                <a href="{{ url('/') }}" class="header__logo-link">--}}
-{{--                    <img src="{{ URL::asset('images/logo.png') }}" alt="" class="header__logo">--}}
-{{--                </a>--}}
-{{--            @endif--}}
 
 
 
@@ -43,16 +33,13 @@
                         <meta itemprop="name" content="Ремонт стиральных машин" />
                     </li>
 
-                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
-                        <a class="header__link" href="{{ url('/kontakty') }}" itemprop="url">Контакты</a>
-                        <meta itemprop="name" content="Контакты" />
-                    </li>
+
                 </ul>
             </nav>
 
             <div class="header__phone">
                 <i class="fas fa-phone-alt"></i>
-                <a href="#" class="header__phone-link">8 (3822) 256-256</a>
+                <a href="tel:83822959039" class="header__phone-link">8 (3822) 959 - 039</a>
 
 
             </div>

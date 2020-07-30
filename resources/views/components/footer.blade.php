@@ -13,7 +13,7 @@
 
                 <div class="footer__contacts-wrapper">
                     <i class="icon fa fa-phone"></i>
-                    <a href="tel:89528052426" class="footer__contacts-link">8 (952) 805 24-26</a>
+                    <a href="tel:83822959039" class="footer__contacts-link">8 (3822) 959-039</a>
                 </div>
                 <div class="footer__contacts-wrapper">
                     <i class="icon fa fa-clock-o"></i>
@@ -61,9 +61,7 @@
                     <div>
                         <a href="{{ url('/') }}" class="footer__menu-link">Ремонт стиральных машин</a>
                     </div>
-                    <div>
-                        <a href="{{ url('/') }}" class="footer__menu-link">Контакты</a>
-                    </div>
+
 
 
 

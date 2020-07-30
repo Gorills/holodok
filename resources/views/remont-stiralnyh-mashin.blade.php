@@ -1,14 +1,14 @@
 @extends('layouts.custom')
 
-@section('title', '')
-@section('description', '')
+@section('title', 'Мастер по ремонту стиральных машин в Томске')
+@section('description', 'Мастер по ремонту сти ральных машин. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт стиральных машин любых марок и типов. Ремонт за 1 час!')
 @section('keywords', '')
-@section('canonical', '')
-@section('og:title', '')
-@section('og:description', '')
-@section('og:url', '')
-@section('twitter:title', '')
-@section('twitter:description', '')
+@section('canonical', 'http://tomskmaster70.ru/remont-stiralnyh-mashin')
+@section('og:title', 'Мастер по ремонту стиральных машин в Томске')
+@section('og:description', 'Мастер по ремонту сти ральных машин. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт стиральных машин любых марок и типов. Ремонт за 1 час!')
+@section('og:url', 'http://tomskmaster70.ru/remont-stiralnyh-mashin')
+@section('twitter:title', 'Мастер по ремонту стиральных машин в Томске')
+@section('twitter:description', 'Мастер по ремонту сти ральных машин. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт стиральных машин любых марок и типов. Ремонт за 1 час!')
 
 
 @section('content')

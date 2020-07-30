@@ -731,6 +731,8 @@ button {
 @media only screen and (max-width: 768px) {
   .start__wrapper {
     margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -778,7 +780,7 @@ button {
 
 @media only screen and (max-width: 768px) {
   .start__img {
-    left: -100%;
+    left: 50%;
   }
 }
 
@@ -989,5 +991,195 @@ tr td:last-child {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
+}
+
+.phone-btn {
+  position: fixed;
+  z-index: 98;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .phone-btn {
+    display: block;
+  }
+}
+
+.phone-btn__link {
+  background-color: #b0a171;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  z-index: 56;
+  transition: all 0.5s ease;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-btn__link--active {
+  display: block;
+  transform: rotate(-90deg);
+  background-color: #0b4571;
+  color: #b0a171;
+}
+
+.phone-btn__link--active::before,
+.phone-btn__link--active::after {
+  content: none !important;
+}
+
+.phone-btn__link::before,
+.phone-btn__link::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #b0a171;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  -webkit-animation: pulse 1.8s linear infinite;
+          animation: pulse 1.8s linear infinite;
+  opacity: 0;
+}
+
+.phone-btn__link::after {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.phone-btn__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+}
+
+.whatsapp-btn {
+  display: none;
+  position: fixed;
+  z-index: 98;
+  left: 15px;
+  bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .whatsapp-btn {
+    display: block;
+  }
+}
+
+.whatsapp-btn__link {
+  background-color: #43d854;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 56;
+  transition: all 0.5s ease;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-btn__link--active {
+  display: block;
+  transform: rotate(-90deg);
+  background-color: #0b4571;
+  color: #43d854;
+}
+
+.whatsapp-btn__link--active::before,
+.whatsapp-btn__link--active::after {
+  content: none !important;
+}
+
+.whatsapp-btn__link::before,
+.whatsapp-btn__link::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #43d854;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  -webkit-animation: pulse 1.8s linear infinite;
+          animation: pulse 1.8s linear infinite;
+  opacity: 0;
+}
+
+.whatsapp-btn__link::after {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.whatsapp-btn__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 43px;
 }
 

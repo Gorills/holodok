@@ -1,14 +1,14 @@
 @extends('layouts.custom')
 
-@section('title', '')
-@section('description', '')
-@section('keywords', '')
-@section('canonical', '')
-@section('og:title', '')
-@section('og:description', '')
-@section('og:url', '')
-@section('twitter:title', '')
-@section('twitter:description', '')
+@section('title', 'Мастер по ремонту холодильника и морозильных камер в Томске')
+@section('description', 'Мастер по ремонту холодильника. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт холодильников любых марок и типов. Ремонт за 1 час!')
+@section('keywords', 'ремонт холодильника, заправка фреоном, устранение утечки фреона, частный мастер')
+@section('canonical', 'http://tomskmaster70.ru/remont-holodilnikov')
+@section('og:title', 'Мастер по ремонту холодильника и морозильных камер в Томске')
+@section('og:description', 'Мастер по ремонту холодильника. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт холодильников любых марок и типов. Ремонт за 1 час!')
+@section('og:url', 'http://tomskmaster70.ru/remont-holodilnikov')
+@section('twitter:title', 'Мастер по ремонту холодильника и морозильных камер в Томске')
+@section('twitter:description', 'Мастер по ремонту холодильника. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт холодильников любых марок и типов. Ремонт за 1 час!')
 
 
 @section('content')
@@ -75,10 +75,13 @@
             <h2 class="price__title">Цены на ремонт холодильников</h2>
 
             <table class="price__table">
-
                 <tr>
-                    <th class="price__item price__item-title">Диагностика</th>
-                    <th class="price__item price__item-title">Бесплатно. В случае отказа от ремонта от 300 до 500</th>
+                    <th>Название услуги</th>
+                    <th>Цена</th>
+                </tr>
+                <tr>
+                    <td class="price__item price__item-title">Диагностика</td>
+                    <td class="price__item price__item-title">Бесплатно. В случае отказа от ремонта от 300 до 500</td>
                 </tr>
                 <tr>
                     <td class="price__item price__item-title">Замена компрессора</td>

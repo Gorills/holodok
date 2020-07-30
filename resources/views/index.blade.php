@@ -1,14 +1,14 @@
 @extends('layouts.custom')
 
-@section('title', '')
-@section('description', '')
-@section('keywords', '')
-@section('canonical', '')
-@section('og:title', '')
-@section('og:description', '')
-@section('og:url', '')
-@section('twitter:title', '')
-@section('twitter:description', '')
+@section('title', 'Ремонт бытовой техники в Томске')
+@section('description', 'Мастер по ремонту бытовой техники. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт бытовой техники любых марок и типов. Ремонт за 1 час!')
+@section('keywords', 'ремонт бытовой техники')
+@section('canonical', 'http://tomskmaster70.ru/')
+@section('og:title', 'Ремонт бытовой техники в Томске')
+@section('og:description', 'Мастер по ремонту бытовой техники. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт бытовой техники любых марок и типов. Ремонт за 1 час!')
+@section('og:url', 'http://tomskmaster70.ru/')
+@section('twitter:title', 'Ремонт бытовой техники в Томске')
+@section('twitter:description', 'Мастер по ремонту бытовой техники. Диагностика поломки на дому. Недорогой ремонт по доступным ценам. Ремонт бытовой техники любых марок и типов. Ремонт за 1 час!')
 
 
 @section('content')
